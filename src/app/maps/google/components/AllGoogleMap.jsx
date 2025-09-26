@@ -527,6 +527,3 @@ const GoogleMaps = () => {
     </>;
 };
 export default GoogleMaps;
-// export default GoogleApiWrapper({
-//   apiKey: "AIzaSyDsucrEdmswqYrw0f6ej3bf4M4suDeRgNA",
-// })(GoogleMaps);
