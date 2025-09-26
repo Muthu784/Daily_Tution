@@ -1,50 +1,9 @@
-# React + TypeScript + Vite
+### Extended description 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern, production‑ready React admin dashboard scaffolded with Vite for fast dev builds and HMR. It ships with a rich set of UI and data components out of the box: interactive charts (ApexCharts), advanced data tables (Grid.js), calendars and scheduling (FullCalendar) form handling with validation (React Hook Form + Yup), drag‑and‑drop (SortableJS and DnD), rich text editing (Quill), file uploads (Dropzone), notifications and alerts (React Toastify and SweetAlert2), and more. Routing is handled by React Router, styling uses Bootstrap/Sass, and the setup includes sensible defaults like an `@` alias to `src` for clean imports.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Tech stack: React 18, Vite 6, React Router, Bootstrap/Sass
+- Data viz and UI: ApexCharts, FullCalendar, Grid.js, Leaflet/Google Maps
+- Forms and UX: React Hook Form + Yup, Dropzone, Quill, Toastify, SweetAlert2
+- Productivity: Drag‑and‑drop, emoji support, count‑ups, date/time pickers
+- Tooling: Fast local dev with HMR, simple build/preview scripts
